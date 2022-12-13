@@ -59,8 +59,8 @@ max-width: 12rem;
 color: white;
 margin: 2rem auto;
 padding: 1rem;
-border-radius: 8px;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+border-radius: 4px;
+box-shadow: 0 10px 5px rgb(0, 0, 0);
 background-image: linear-gradient(#6753ea,#3cddc4);
 position: relative;
 z-index: 0;
@@ -74,7 +74,8 @@ background-color: currentcolor;
 	
 /* Hover curseur */
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
-row-gap: 0;	
+
+transition:1s;
 color: black;
 font-weight:bolder;
 }
