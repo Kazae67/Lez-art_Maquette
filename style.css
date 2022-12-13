@@ -29,10 +29,13 @@ scroll-behavior: smooth;
 nav{
 position:fixed;
 top: 0;
+padding-top:15px;
+height:100px;
 z-index: 1;
 left:0;
 right:0;
- background:rgba(255, 255, 255, 0.52);
+background:rgba(255, 255, 255, 0.52);
+
 }
 	
 nav ul {
@@ -52,7 +55,7 @@ nav li {
 
 /* Nav design */
 nav a {
-display: flex;
+display: relative;
 font-size:1.25rem;
 text-decoration: none;
 justify-content: center;
@@ -76,9 +79,9 @@ background-color: currentcolor;
 /* Hover curseur */
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
 
-transition:1s;
+transition:0.5s;
 color: black;
-font-weight:bolder;
+
 }
 
 h2 {
