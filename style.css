@@ -1,26 +1,21 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-	
-@font-face{font-family:'Lato';font-style:normal;font-display:swap;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}	
-
-body {
+* {
 font-family: 'Lato', sans-serif;
 margin: 0;
-color: #111;	
+padding: 0;
 }
 	
 html, body, .section {
   height: 100%;
 }
 
+/* Rendre le scroll-bahavior plus smooth */
 html {
 scroll-snap-type: y mandatory;scroll-snap-type: block mandatory;
 scroll-behavior: smooth;
 }
 
+
+/* Rester à l'endroit même en actualisant */
 .section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -29,11 +24,9 @@ scroll-behavior: smooth;
   align-items: center;
   justify-content: center;
 }	
-	
 
-	
-
-.div-nav{
+/* NAVBAR */
+nav{
 position:fixed;
 top: 0;
 z-index: 1;
@@ -42,7 +35,7 @@ right:0;
  background:rgba(255, 255, 255, 0.52);
 }
 	
-.div-nav ul {
+nav ul {
 margin: 0;
 padding: 0;
 list-style-type: none;
@@ -51,11 +44,13 @@ width: 100%;
 justify-content: center;	
 }
 	
-.div-nav li {
-  padding: 1rem;
+/* Nav espacement */
+nav li {
+  padding: 2rem;
 }
-	
-.div-nav a {
+
+/* Nav design */
+nav a {
 display:grid;
 font-size:1.25rem;
 text-decoration: none;
@@ -66,35 +61,47 @@ transition: row-gap .4s;
 grid-template-rows: 1fr 4px;	
 }
 	
-.div-nav ul li a::after {
+nav ul li a::after {
 content: '';
 height: 50%;
 background-color: currentcolor;
 }
 	
-.div-nav ul li a:hover,.demo-nav ul li a:focus-within {	
+nav ul li a:hover,.demo-nav ul li a:focus-within {	
 row-gap: 0;	
 }
-
-	
-
 
 h2 {
 text-transform: uppercase;
 font-size: 2rem;
 }
 
-	
+/* SECTION */
 .section-1 {
-background:#e67c7c
+height: 600px;
+background:#e67c7c;
+
 }
 .section-2 {
-background:#8d8dea
+height: 600px;
+background:#8d8dea;
 }
 .section-3 {
-background:#eaea67
+height: 600px;
+background:#eaea67;
 }
 	
 .section-4 {
-background:#9ceda2
+height: 600px;
+background:#9ceda2;
+}	
+
+.section-5 {
+height: 600px;
+background:#2347aa;
+}
+
+.section-6 {
+height: 600px;
+background:#b8294c;
 }	
