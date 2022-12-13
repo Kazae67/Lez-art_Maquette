@@ -96,7 +96,7 @@ background:#e67c7c;
 
 }
 .section-2 {
-height: 600px;
+height: 1100px;
 background:#8d8dea;
 }
 .section-3 {
@@ -119,48 +119,38 @@ height: 600px;
 background:#b8294c;
 }	
 
+/* - - C A R D S - - */
+
 *{box-sizing:border-box}
-
 img{
-
 max-width: 100%;
-
 }
 
 /*pour le saut de page, on cree une class que l'on met en display:none*/
 .target{
-
 display: none
-
 }
 
 
 /* englobe le slider */
 
 .cadre_diapo{
-
-max-width: 600px;
+max-width: 800px;
 margin: 2rem auto;
 overflow: hidden;
-	
-	}
+}
 
 .interieur_diapo{
-	
 display: flex;
-width: 100%;
-transition: transform .6s ease-in-out
-	
-	}
+width: 200%;
+transition: transform .6s ease-in-out	
+}
 
 .description{
-
 position: relative;
-
 }
 
 .description span{
-
 position: absolute;
 left: 0;
 top: 2%;
@@ -170,69 +160,51 @@ padding: .5rem;
 justify-content: center;
 color: white;
 background: hsla(0,0%,0%,.35)
+}
 	
-	}
-	
-	
+/*image 1*/
 #votre_id1:target ~ .cadre_diapo .interieur_diapo{
-
 transform:translatex(0)
+}
 
-}/*image 1*/
-
+/*image 2*/
 #votre_id2:target ~ .cadre_diapo .interieur_diapo{
-
 transform:translatex(-25%)
+}
 
-}/*image 2*/
-
+/*image 3*/
 #votre_id3:target ~ .cadre_diapo .interieur_diapo{
-
 transform:translatex(-50%)
+}
 
-}/*image 3*/
-
+/*image 4*/
 #votre_id4:target ~ .cadre_diapo .interieur_diapo{
-
 transform:translatex(-75%)
-
-}/*image 4*/
-
-
-
+}
 
 
 /*navigation avec images miniatures*/
 .navigation_diapo{
 	
-display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+/*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+display: flex; 
 list-style-type: none;
 margin: 0;
 padding: 0
-	
-	}
+}
 
 .navigation_diapo li {
-	
-	padding: .25rem;
-	
-	}
+padding: .25rem;
+}
 
 .navigation_diapo img{
 
 border: 3px solid white;
 box-shadow:0 0 5px hsla(0,0%,0%,.4);
-
+}
 	
-	}
-	
-	
-	@media (min-width:31.25rem){
-		
-		.description span{
-			
-			font-size: initial
-		
-		}
-	
-	}
+@media (min-width:31.25rem){
+    .description span{
+        font-size: initial
+    }
+}
