@@ -51,14 +51,19 @@ nav li {
 
 /* Nav design */
 nav a {
-display:grid;
+display: flex;
 font-size:1.25rem;
 text-decoration: none;
-color:currentColor;
-row-gap: 100%;
-overflow: hidden;
-transition: row-gap .4s;
-grid-template-rows: 1fr 4px;	
+justify-content: center;
+max-width: 12rem;
+color: white;
+margin: 2rem auto;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+background-image: linear-gradient(#6753ea,#3cddc4);
+position: relative;
+z-index: 0;
 }
 	
 nav ul li a::after {
@@ -67,8 +72,11 @@ height: 50%;
 background-color: currentcolor;
 }
 	
+/* Hover curseur */
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
 row-gap: 0;	
+color: black;
+font-weight:bolder;
 }
 
 h2 {
