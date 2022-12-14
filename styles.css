@@ -109,6 +109,13 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   align-items: center;
   justify-content: center;
 }
+#calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 960px; /* multiplier par le margin px*/
+}
 
 /* Boite à image*/
 .window {
