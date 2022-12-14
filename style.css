@@ -165,6 +165,7 @@ background:#b8294c;
   transition: 0.5s;
 }
 
+/* Numero */
 .txtbox span {
   color: #fff;
   font-size: 40px;
@@ -176,16 +177,19 @@ background:#b8294c;
   z-index: 1;
 }
 
+/* Zoom image dans l'block */
 .img-box img{
   display:block;
-  width: 100%;
+  width: 120%;
 }
 
 .txtbox.active {
-  background: green;
+  opacity: 0;
   transform: translateX(250px) rotate(180deg);
 }
 
 .txtbox:hover {
   opacity: 0;
+  transform: translateX(100px) rotate(35deg);
+  transform:matrix3d(50px);
 }  
