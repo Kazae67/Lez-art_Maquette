@@ -1,3 +1,7 @@
+:root {
+  --trans: rgba(0, 0, 0, 0.759);
+}
+
 * {
 font-family: 'Lato', sans-serif;
 margin: 0;
@@ -121,90 +125,67 @@ background:#b8294c;
 
 /* - - C A R D S - - */
 
-*{box-sizing:border-box}
-img{
-max-width: 100%;
+#container {
+  display: flex;
+  min-height: 100vh; /*v = viewport, h = height */
+  align-items: center;
+  justify-content: center;
 }
 
-/*pour le saut de page, on cree une class que l'on met en display:none*/
-.target{
-display: none
+#calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 960px; /* multiplier par le margin px*/
 }
 
+.window {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 5px;
+  overflow: hidden;
 
-/* englobe le slider */
-
-.cadre_diapo{
-max-width: 800px;
-margin: 2rem auto;
-overflow: hidden;
 }
 
-.interieur_diapo{
-display: flex;
-width: 200%;
-transition: transform .6s ease-in-out	
+.txtbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
 }
 
-.description{
-position: relative;
+.txtbox span {
+  color: #fff;
+  font-size: 40px;
 }
 
-.description span{
-position: absolute;
-left: 0;
-top: 2%;
-font-size: 75%;
-display: flex;
-padding: .5rem;
-justify-content: center;
-color: white;
-background: hsla(0,0%,0%,.35)
-}
-	
-/*image 1*/
-#votre_id1:target ~ .cadre_diapo .interieur_diapo{
-transform:translatex(0)
+.txtbox.trans { background: var(--trans);}
+
+.img-box{
+  z-index: 1;
 }
 
-/*image 2*/
-#votre_id2:target ~ .cadre_diapo .interieur_diapo{
-transform:translatex(-25%)
+.img-box img{
+  display:block;
+  width: 100%;
 }
 
-/*image 3*/
-#votre_id3:target ~ .cadre_diapo .interieur_diapo{
-transform:translatex(-50%)
+.txtbox.active {
+  background: green;
+  transform: translateX(250px) rotate(180deg);
 }
 
-/*image 4*/
-#votre_id4:target ~ .cadre_diapo .interieur_diapo{
-transform:translatex(-75%)
-}
-
-
-/*navigation avec images miniatures*/
-.navigation_diapo{
-	
-/*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
-display: flex; 
-list-style-type: none;
-margin: 0;
-padding: 0
-}
-
-.navigation_diapo li {
-padding: .25rem;
-}
-
-.navigation_diapo img{
-
-border: 3px solid white;
-box-shadow:0 0 5px hsla(0,0%,0%,.4);
-}
-	
-@media (min-width:31.25rem){
-    .description span{
-        font-size: initial
-    }
-}
+.txtbox:hover {
+  opacity: 0;
+}  
