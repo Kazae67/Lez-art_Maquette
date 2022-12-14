@@ -1,0 +1,285 @@
+:root {
+  --trans: rgba(0, 0, 0, 0.759);
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+text-align: center;
+background-color: beige;
+font-family: "Poppins", sans-serif;
+}
+
+html, body, .section {
+  height: 100%;
+}
+
+/* Rendre le scroll-bahavior plus smooth */
+html {
+  scroll-snap-type: y mandatory;scroll-snap-type: block mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Rendre le scroll-bahavior plus smooth */
+html {
+  scroll-snap-type: y mandatory;scroll-snap-type: block mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Rester à l'endroit même en actualisant */
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /*-webkit-overflow-scrolling: touch;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}	
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top: 0;
+  padding-top:15px;
+  height:100px;
+  z-index: 1;
+  left:0;
+  right:0;
+  background:rgba(255, 255, 255, 0.52);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;	
+}
+
+/* Nav espacement */
+nav li {
+  padding: 1.5rem;
+}
+
+/* Nav design */
+nav a {
+  display: relative;
+  font-size:1.25rem;
+  text-decoration: none;
+  justify-content: center;
+  max-width: 12rem;
+  color: white;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 5px rgb(0, 0, 0);
+  background-image: linear-gradient(#6753ea,#3cddc4);
+  position: relative;
+  z-index: 0;
+}
+
+nav ul li a::after {
+  content: '';
+  height: 50%;
+  background-color: currentcolor;
+  }
+
+/* Hover curseur */
+nav ul li a:hover,.demo-nav ul li a:focus-within {	
+  transition:0.5s;
+  color: black;
+  }
+
+  h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      }
+
+
+/* G A L E R I E */
+#containerGalerie {
+  display: flex;
+  min-height: 100vh; /*v = viewport, h = height */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Boite à image*/
+.window {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(1, 7, 24, 0.611);
+}
+.window:hover {
+  z-index:3;
+  transform:scale(1.3) rotate(5deg);
+  transition:1s;
+}
+
+.txtbox {
+  display: flex;
+  justify-content: right;
+  align-items: top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+/* Numero */
+.txtbox span {
+  color: #fff;
+  font-size: 40px;
+}
+
+.txtbox.trans { background: var(--trans);}
+
+.img-box{
+  z-index: 1;
+
+}
+
+
+/* Zoom image dans l'block */
+.img-box img{
+  display:block;
+  width: 120%;
+}
+
+/* full screen */
+.full-img{
+  width:100%;
+  height:100vh;
+  background: rgba(0,0,0,0.9);
+  position:fixed;
+  top: 0;
+  left:0;
+  display:none;
+  align-items: center;
+  justify-content: center;
+  z-index:100;
+}
+
+/* Full screen center */
+.full-img img{
+  width:90%;
+  max-width:500px;
+}
+
+.full-img span{
+  position:absolute;
+  top:15%;
+  right:15%;
+  font-size:30px;
+  color: #fff;
+  cursor:pointer;
+}
+
+.txtbox.active {
+  opacity: 0;
+  transform: translateX(250px) rotate(180deg);
+}
+
+.txtbox:hover {
+  opacity: 0;
+  transform: translateX(100px) rotate(35deg);
+}  
+
+/* E X P O S */
+.containerExpos {
+  margin: 3em auto;
+  width: 610px;
+  border: solid white 5px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.containerExpos .thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+}
+.containerExpos .thumbnail .thumb {
+  height: 200px;
+  width: 200px;
+  transition: all 0.2s;
+  object-fit: cover;
+  cursor: pointer;
+}
+.containerExpos .thumbnail .thumb:hover {
+  box-shadow: 3px 3px 20px;
+  opacity: 0.8;
+}
+
+.desc {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.desc:hover .judul {
+  transform: translateY(80px);
+}
+.desc:hover .tittle {
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.8) 100%);
+opacity: 1;
+}
+.desc:hover .text {
+transform: translateY(-150px);
+}
+.desc .prev {
+object-fit: cover;
+width: 600px;
+height: 400px;
+}
+.desc .tittle {
+margin: auto;
+overflow: hidden;
+width: 100%;
+height: 100%;
+position: absolute;
+transition: all 0.3s ease;
+opacity: 0;
+display: flex;
+flex-direction: column;
+}
+.desc .tittle .judul {
+color: white;
+padding: 20px;
+margin-top: -40px;
+transition: all 0.3s ease;
+}
+.desc .tittle .text {
+color: white;
+margin-top: 350px;
+padding: 20px;
+transition: all 0.35s ease 0.4s;
+}
+
+@keyframes fade {
+to {
+  opacity: 1;
+}
+}
+.effect {
+opacity: 0;
+animation: fade 0.2s forwards;
+}
+
+.active {
+opacity: 0.5;
+}

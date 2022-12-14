@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
     <title>Le Lez'art</title>
 </head>
 <body>
@@ -32,43 +33,33 @@
 <!-- G A L E R I E-->
     <div class="section section-1" id="Galerie">
         <div id="containerGalerie">
-            <div id="calendar">
-                <!-- Fenêtre image -->
-                <div class="window">
-                    <!-- image de la fenêtre -->
-                    <div class="img-box">
-                        <img src="images/1.jpg" alt="">
-                    </div>
-                    <!-- numéro de la fenêtre -->
-                    <div class="txtbox trans">
-                        <span>1</span>
-                    </div>
+
+            <div class="window">
+                <div class="img-box">
+                    <a href="images/1.jpg" data-lightbox="art" data-title="Caption1">
+                        <img src="images/1.jpg">
+                    </a>
                 </div>
-                <!-- Fenêtre image -->
-                <div class="window">
-                    <!-- image de la fenêtre -->
-                    <div class="img-box">
-                        <img src="images/2.jpg" alt="">
-                    </div>
-                    <!-- numéro de la fenêtre -->
-                    <div class="txtbox trans">
-                        <span>2</span>
-                    </div>
+            </div>
+
+            <div class="window">
+                <div class="img-box">
+                    <a href="images/2.jpg" data-lightbox="art" data-title="Caption2">
+                        <img src="images/2.jpg">
+                    </a>
                 </div>
-                <!-- Fenêtre image -->
-                <div class="window">
-                    <!-- image de la fenêtre -->
-                    <div class="img-box">
-                        <img src="images/3.jpg" alt="">
-                    </div>
-                    <!-- numéro de la fenêtre -->
-                    <div class="txtbox trans">
-                        <span>3</span>
-                    </div>
+            </div>
+
+            <div class="window">
+                <div class="img-box">
+                    <a href="images/3.jpg" data-lightbox="art" data-title="Caption3">
+                        <img src="images/3.jpg">
+                    </a>
                 </div>
             </div>
         </div>
-</div>
+    </div>
+
 <!--/ G A L E R I E-->
 
 <!-- E X P O S-->
@@ -111,12 +102,7 @@
 <footer>
 <!-- S C R I P T S -->
     <script>
-        /* Début SCRIPT Galerie */
-
-        /* Fin SCRIPT Galerie */
-
-
-        /* Début SCRIPT EXPOS */
+         /* Début SCRIPT EXPOS */
 
         const containerExpos = document.querySelector(".containerExpos");
         const preview = document.querySelector(".prev");
@@ -143,5 +129,7 @@
 
        /* Fin SCRIPT EXPOS */ 
     </script>
+
+    <script src="lightbox-plus-jquery.js"></script>
     
 </footer>
