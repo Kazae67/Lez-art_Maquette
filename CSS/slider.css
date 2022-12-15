@@ -15,8 +15,11 @@ body {
 
 /* Taille de l'image */
 .swiper {
-  width: 80%;
-  height: 81.4%;
+  border: 8px solid black;
+
+  width: 100%;
+  height: 91%;
+  margin-top:100px;
 
 }
 

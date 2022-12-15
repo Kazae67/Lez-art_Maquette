@@ -11,7 +11,7 @@
 
 body {
 text-align: center;
-background-color: beige;
+background-color: rgb(174, 174, 112);
 font-family: "Poppins", sans-serif;
 }
 
@@ -50,7 +50,7 @@ nav{
   z-index: 10;
   left:0;
   right:0;
-  background:rgba(255, 255, 255, 0.52);
+  background:rgb(4, 0, 2);
 }
 
 nav ul {
