@@ -83,13 +83,13 @@ label {
 	font-size: 3rem;
 }
 
-label[for=salles1]{
-    background:blue;
+label[for=salles2]{
+    background:#444;
 }
 
-label[for="salles2"],
-label[for="salles4"] {
-	background:red;
+label[for="salles1"],
+label[for="salles3"]{
+	background:black;
 }
 
 label:before,
