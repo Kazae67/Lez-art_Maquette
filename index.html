@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/box.css" rel="stylesheet" >
-    <link href="CSS/carousel.css" rel="stylesheet" >
+    <link href="CSS/slider.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Le Lez'art</title>
 </head>
 <body>
@@ -28,20 +29,21 @@
 
 <!-- S E C T I O N S-->
     <div class="section section-1" id="Accueil">
-        <form>
-
-			<input type="radio" name="fancy" autofocus value="salles1" id="salles1" />
-			<input type="radio" name="fancy" value="salles2" id="salles2" />
-			<input type="radio" name="fancy" value="salles3" id="salles3" />
-			<input type="radio" name="fancy" value="salles4" id="salles4" />			
-			<label for="salles1">salles1</label><label for="salles2">salles2</label><label for="salles3">salles3</label><label for="salles4">salles4</label>
-
-			<div class="keys">Utilisez les flèches pour naviguer </div>
-	</form>
-   </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/1.jpg"></div>
+              <div class="swiper-slide"><img src="images/2.jpg"></div>
+              <div class="swiper-slide"><img src="images/3.jpg"></div>
+              <div class="swiper-slide"><img src="images/4.jpg"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
 <!-- G A L E R I E-->
-    <div class="section section-1" id="Galerie">
+    <div class="section section-2" id="Galerie">
         <div id="containerGalerie">
             <div id="calendar">
             <div class="window">
@@ -180,11 +182,11 @@
    
 </body>
 <!--/ S E C T I O N S-->
-<footer>
-<!-- S C R I P T S -->
-    <script>
-         /* Début SCRIPT EXPOS */
 
+<!-- S C R I P T S -->
+<!-- Début SCRIPT EXPOS -->
+<footer>
+        <script>
         const containerExpos = document.querySelector(".containerExpos");
         const preview = document.querySelector(".prev");
         const active = document.querySelectorAll(".thumb");
@@ -207,10 +209,30 @@
             e.target.classList.add("active");
           }
         });
+        </script>
+<!-- Fin SCRIPT EXPOS -->
 
-       /* Fin SCRIPT EXPOS */ 
-    </script>
+<!-- Swiper JS  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script src="lightbox-plus-jquery.min.js"></script>
+<!-- Initialiser Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  </script>
+
+ <!-- Lightbox JS -->
+<script src="lightbox-plus-jquery.min.js"></script>
     
 </footer>
