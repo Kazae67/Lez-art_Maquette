@@ -45,17 +45,17 @@ html {
 nav{
   position:fixed;
   top: 0;
-  padding-top:15px;
+  padding-top:20px;
   height:100px;
   z-index: 10;
   left:0;
   right:0;
-  background:rgb(5, 0, 0);
+  background:rgb(0, 0, 0);
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: 25px;
+  padding: 0px;
   list-style-type: none;
   display: flex;
   width: 100%;
@@ -64,13 +64,13 @@ nav ul {
 
 /* Nav espacement */
 nav li {
-  padding: 0.5rem;
+  padding: 0.1rem;
 }
 
 /* Nav design */
 nav a {
   display: relative;
-  font-size:1.25rem;
+  font-size:0.8rem;
   text-decoration: none;
   justify-content: center;
   max-width: 12rem;
