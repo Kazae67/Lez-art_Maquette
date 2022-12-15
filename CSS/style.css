@@ -223,7 +223,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 .containerExpos .thumbnail .thumb {
   height: 200px;
   width: 200px;
-  transition: all 0.2s;
+  transition: all 0.3s;
   object-fit: cover;
   cursor: pointer;
 }
@@ -246,7 +246,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30
 opacity: 1;
 }
 .desc:hover .text {
-transform: translateY(-150px);
+transform: translateY(-100px);
 }
 .desc .prev {
 object-fit: cover;

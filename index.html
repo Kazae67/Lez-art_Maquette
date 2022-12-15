@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/styles.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/box.css" rel="stylesheet" >
+    <link href="CSS/carousel.css" rel="stylesheet" >
     <title>Le Lez'art</title>
 </head>
 <body>
@@ -27,7 +28,16 @@
 
 <!-- S E C T I O N S-->
     <div class="section section-1" id="Accueil">
-        <h2>Accueil</h2>
+        <form>
+
+			<input type="radio" name="fancy" autofocus value="salles1" id="salles1" />
+			<input type="radio" name="fancy" value="salles2" id="salles2" />
+			<input type="radio" name="fancy" value="salles3" id="salles3" />
+			<input type="radio" name="fancy" value="salles4" id="salles4" />			
+			<label for="salles1">salles1</label><label for="salles2">salles2</label><label for="salles3">salles3</label><label for="salles4">salles4</label>
+
+			<div class="keys">Utilisez les flèches pour naviguer </div>
+	</form>
    </div>
 
 <!-- G A L E R I E-->
@@ -151,9 +161,7 @@
               <img src="images/1.jpg" class="thumb">
               <img src="images/2.jpg" class="thumb">
               <img src="images/3.jpg" class="thumb">
-              <img src="images/4.jpg" class="thumb">
-              <img src="images/5.jpg" class="thumb">
-              <img src="images/6.jpg" class="thumb">
+
             </div>
           </div>
    </div>
