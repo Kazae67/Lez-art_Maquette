@@ -262,7 +262,7 @@
               <img src="images/3.jpg" class="thumb">
 
             </div>
-          </div>
+        </div>
    </div>
    </div>
 <!--/ E X P O S-->
@@ -270,9 +270,11 @@
     <div class="section section-1" id="Evenements">
         <h2>Événements</h2>
    </div>
+
     <div class="section section-1" id="Lieu">
         <h2>Lieu</h2>
    </div>
+
     <div class="section section-1" id="Contact">
         <h2>Contact</h2>
    </div>
@@ -280,85 +282,20 @@
 </body>
 <!--/ S E C T I O N S-->
 
-<!-- S C R I P T S -->
-
-
-<!--GALERIE -->
+<footer>
 <!--FILTER -->
 <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+<script src="js/filterGallery.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.list').click(function(){
-            const value = $(this).attr('data-filter');
-            if (value == 'all'){
-                $('.itemBox').show('1000');
-            }
-            else{
-                $('.itemBox').not('.'+value).hide('1000');
-                $('.itemBox').filter('.'+value).show('1000');
-            }
-        })
-
-        // ajouter active class sur l'item selectionné
-        $('.list').click(function(){
-            $(this).addClass('active').siblings().removeClass('active');
-        })
-    });
-</script>
-<!--/FILTER -->
-<!--/GALERIE -->
-
-
-
-<footer>
-        <script>
-        const containerExpos = document.querySelector(".containerExpos");
-        const preview = document.querySelector(".prev");
-        const active = document.querySelectorAll(".thumb");
-         
-        containerExpos.addEventListener("click", function (e) {
-          if (e.target.className == "thumb") {
-            preview.src = e.target.src;
-            preview.classList.add("effect");
-         
-            setTimeout(function () {
-              preview.classList.remove("effect");
-            }, 100);
-         
-            active.forEach(function (thumb) {
-              if (thumb.classList.contains("active")) {
-                thumb.classList.remove("active");
-              }
-            });
-         
-            e.target.classList.add("active");
-          }
-        });
-        </script>
-<!--/EXPOS -->
+<!-- Expo Selector JS -->
+<script src="js/expoSelector.js"></script>
 
 <!-- Swiper JS  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialiser Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-  </script>
+<script src="js/initSwiper.js"></script>
 
  <!-- Lightbox JS -->
 <script src="js/lightbox-plus-jquery.min.js"></script>
-    
 </footer>
