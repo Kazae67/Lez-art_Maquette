@@ -54,7 +54,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-outerContainer:after {
-  content: "";
+  content: ""; 
   display: table;
   clear: both;
 }

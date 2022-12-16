@@ -218,7 +218,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 }
 .containerExpos .thumbnail {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .containerExpos .thumbnail .thumb {
   height: 200px;
