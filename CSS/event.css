@@ -93,7 +93,10 @@
 }
 
 /* redimenssionner l'image */
-#containerEvent img {width: 110%;height: 110%;}
+#containerEvent img {
+	width: 110%;
+	height: 110%;
+}
 
 /* Description au curseur */
 .info {

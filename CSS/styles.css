@@ -97,6 +97,7 @@ nav a {
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
   transition:0.5s;
   color: black;
+  
   }
   
 /* G A L E R I E */
@@ -162,6 +163,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   letter-spacing: 1px;
   cursor:pointer;
 }
+
 
 /* Ajouter la couleur à la class active */
 .section-filter ul li.active{
