@@ -19,7 +19,8 @@ font-family: "Poppins", sans-serif;
 
 #logo {
   font-size:20px;
-  margin-right:518px;
+  margin-right:1250px;
+  margin-top:30px;
   color: white;
   letter-spacing:2px;
   text-shadow:2px 2px 5px;
@@ -64,13 +65,11 @@ nav{
   right:0;
   background:rgb(0, 0, 0);
 }
-
 nav ul {
-  margin: 25px;
+  margin: -20px;
   padding: 0px;
   list-style-type: none;
   display: flex;
-  width: 65%;
   justify-content: center;	
 }
 
@@ -96,24 +95,14 @@ nav a {
   z-index: 0;
 }
 
-nav ul li a::after {
-  content: '';
-  height: 50%;
-  background-color: currentcolor;
-  }
+
 
 /* Hover curseur */
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
   transition:0.5s;
   color: black;
   }
-
-  h2 {
-      text-transform: uppercase;
-      font-size: 2rem;
-      }
-
-
+  
 /* G A L E R I E */
 #containerGalerie {
   display: flex;
