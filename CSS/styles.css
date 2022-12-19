@@ -16,9 +16,10 @@ background-color: rgb(174, 174, 112);
 font-family: "Poppins", sans-serif;
 }
 
+
 #logo {
   font-size:20px;
-  margin-right:522px;
+  margin-right:518px;
   color: white;
   letter-spacing:2px;
   text-shadow:2px 2px 5px;
@@ -159,7 +160,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 
 /* Filtre de gauche à droite */
 .section-filter ul{
-  display:flex;
+  /* display:flex; */
   margin-bottom:10px;
   
 }

@@ -8,12 +8,14 @@
     <link href="css/box.css" rel="stylesheet" >
     <link href="css/slider.css" rel="stylesheet" >
     <link href="css/event.css" rel="stylesheet" >
+    <link href="css/darkmode.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Le Lez'art</title>
 </head>
-<body>
+
+
     <header>
-        
+        <body class="light">
 <!-- N A V B A R -->
 
         <nav>
@@ -21,6 +23,7 @@
             <ul>
 
                 <div id="logo">Lez'art</div> <!-- LOGO -->
+                <div class="btn-toggle">Go nuit</div>
                 <li><a href="#Accueil"><b>Accueil</b></a></li>
                 <li><a href="#Galerie"><b>Galerie</b></a></li>
                 <li><a href="#Expos"><b>Expos</b></a></li>
@@ -39,7 +42,6 @@
     <div class="section section-1" id="Accueil">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-
                     <div class="swiper-slide"><img src="images/7.jpg"></div>
                     <div class="swiper-slide"><img src="images/16.jpg"></div>
                     <div class="swiper-slide"><img src="images/14.jpg"></div>
@@ -428,4 +430,7 @@
 
  <!-- Lightbox JS -->
 <script src="js/lightbox-plus-jquery.min.js"></script>
+
+<!-- Darkmode JS -->
+<script src="js/darkmode.js"></script>
 </footer>
