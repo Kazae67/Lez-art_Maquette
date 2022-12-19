@@ -1,0 +1,125 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+
+/* Container d'event */
+#containerEvent{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 500px;
+}
+
+/* 	Détail sur le produit */
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+}
+
+/* Boutton Position */
+.control{
+	position: absolute;
+	bottom: 10%;
+}
+/* Boutton apparence */
+.btn {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #49C608;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+}
+
+/* Hover du boutton réservé */
+.btn:hover{transform: translateY(-3px);}
+
+/* text/hover/taille/transition */
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+    padding: 1px 38px;
+	font-size: 1.2em;
+	margin:0;
+}
+
+/* Position prix */
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+
+}
+
+/* taille de l'affichage prix */
+.btn .price {
+	transform: translateX(0%); padding-right: 91.7px;
+    align-items:center;
+}
+
+/* Faire disparaître le réserver pour afficher le prix */
+.btn .buy {z-index: 3; font-weight: bolder;}
+.btn:hover .price {transform: translateX(-110%);}
+
+
+/* Image du produit à droite + transition   */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+/* redimenssionner l'image */
+#containerEvent img {width: 110%;height: 110%;}
+
+/* Description au curseur */
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.5;
+    text-align: left;
+    padding-left:20px;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h3 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.1);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.1, 1.1);}
