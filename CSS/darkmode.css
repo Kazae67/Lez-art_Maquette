@@ -4,10 +4,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif
   }
   
-  body{
-    background:var(--fond);
-    
-  }
+
 
   h1{
     text-align:center;
