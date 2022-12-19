@@ -1,28 +1,11 @@
-
-
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-  }
-  
-
-
-  h1{
-    text-align:center;
-    padding-top:70px;
-
-  }
-  .contenu{
-    padding: 50px 10%;
-    text-align:justify;
-  }
-  
+/* Boutton position */
   .btn-toggle{
     position:absolute;
-    top: 15px;
-    right:15px;
-    width: 80px;
-    height: 80px;
-    border-radius:50%;
+    top: 25px;
+    right:25px;
+    width: 60px;
+    height: 60px;
+    border-radius:8%;
     background:rgb(114, 114, 114);
     color:#fff;
     border:1px solid #333;
@@ -30,13 +13,36 @@ html {
     justify-content: center;
     align-items:center;
     cursor:pointer;
+    font-weight:bolder;
+  }
+
+  /* Curseur hover dark mode */
+    .btn-toggle {
+      --s: 60px;   /* the size of the image */
+      --b: 3px;     /* the border thickness*/
+      --g: 14px;    /* the gap */
+      --c: #ffffff; /* the color */
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/7) solid rgba(0, 0, 0, 0);
+    outline-offset: calc(var(--s)/-10);
+    cursor: pointer;
+    transition: 0.7s;
   }
   
+  /* hover btn darkmode */
+  .btn-toggle:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+  
+  /* Dark mode couleur */
   body.dark {
     color: rgb(0, 0, 0)!important;
     background: #333!important;
   }
   
+  /* Light mode couleur */
   body.dark .btn-toggle{
     background: #f1f1f1;
     color: #333;

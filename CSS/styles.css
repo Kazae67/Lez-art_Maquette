@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-:root {
-  --trans: rgba(0, 0, 0, 0.759);
-}
 
 * {
   font-family: 'Lato', sans-serif;
@@ -16,7 +13,7 @@ background-color: rgb(174, 174, 112);
 font-family: "Poppins", sans-serif;
 }
 
-
+/* LOGO */
 #logo {
   font-size:20px;
   margin-right:1250px;
@@ -26,8 +23,7 @@ font-family: "Poppins", sans-serif;
   text-shadow:2px 2px 5px;
 }
 
-
-
+/* Taille par section */
 html, body, .section {
   height: 100%;
 }
@@ -65,6 +61,8 @@ nav{
   right:0;
   background:rgb(0, 0, 0);
 }
+
+/* Position des UL */
 nav ul {
   margin: -20px;
   padding: 0px;
@@ -95,8 +93,6 @@ nav a {
   z-index: 0;
 }
 
-
-
 /* Hover curseur */
 nav ul li a:hover,.demo-nav ul li a:focus-within {	
   transition:0.5s;
@@ -110,7 +106,9 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   align-items: center;
   justify-content: center;
 }
-#calendar {
+
+/* Wrapper & positionnement galerie */
+#cardsGalerie {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,8 +116,8 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   width: 960px; /* multiplier par le margin px*/
 }
 
-/* Boite à image*/
-.window {
+/* Boite de l'image*/
+.windowGalerie {
   position: relative;
   width: 150px;
   height: 150px;
@@ -132,8 +130,9 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   box-shadow: 0 10px 20px rgba(1, 7, 24, 0.611);
 
 
+/* Hover de la boite image */
 }
-.window:hover {
+.windowGalerie:hover {
   z-index:3;
   transform:scale(1.3) rotate(5deg);
   transition:1s;
@@ -170,19 +169,20 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
     color: #fff;
 }
 
-.calendar{
+/* Wrap & flex galerie */
+.cardsGalerie{
   display: flex;
   flex-wrap: wrap;
 }
 
-.calendar .window{
+.cardsGalerie .windowGalerie{
   position: relative;
   width: 300px;
   height:300px;
   margin:5px;
 }
 
-.calendar .window img{
+.cardsGalerie .windowGalerie img{
   position: absolute;
   top:0%;
   left:0%;
@@ -199,17 +199,6 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   width: 120%;
 }
 
-
-.txtbox.active {
-  opacity: 0;
-  transform: translateX(250px) rotate(180deg);
-}
-
-.txtbox:hover {
-  opacity: 0;
-  transform: translateX(100px) rotate(35deg);
-}  
-
 /* E X P O S */
 .containerExpos {
   margin: 3em auto;
@@ -219,10 +208,12 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
+
 .containerExpos .thumbnail {
   display: flex;
   flex-wrap: wrap; 
 }
+
 .containerExpos .thumbnail .thumb {
   height: 200px;
   width: 200px;
@@ -230,6 +221,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   object-fit: cover;
   cursor: pointer;
 }
+
 .containerExpos .thumbnail .thumb:hover {
   box-shadow: 3px 3px 20px;
   opacity: 0.8;
@@ -241,21 +233,26 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
   height: 400px;
   overflow: hidden;
 }
+
 .desc:hover .judul {
   transform: translateY(80px);
 }
+
 .desc:hover .tittle {
 background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.8) 100%);
 opacity: 1;
 }
+
 .desc:hover .text {
 transform: translateY(-100px);
 }
+
 .desc .prev {
 object-fit: cover;
 width: 600px;
 height: 400px;
 }
+
 .desc .tittle {
 margin: auto;
 overflow: hidden;
@@ -267,12 +264,14 @@ opacity: 0;
 display: flex;
 flex-direction: column;
 }
+
 .desc .tittle .judul {
 color: white;
 padding: 20px;
 margin-top: -40px;
 transition: all 0.3s ease;
 }
+
 .desc .tittle .text {
 color: white;
 margin-top: 350px;
