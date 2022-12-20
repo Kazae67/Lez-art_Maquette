@@ -1,0 +1,80 @@
+#containerContact {
+  margin: 50px auto;
+  width: 125px;
+}
+
+/* Base */
+a.s3d  {
+  clear: both;
+  opacity: .8;
+  border-radius:3px;
+  box-shadow:0 4px 5px rgba(0,0,0,.3);
+  display: inline-block !important;
+  font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+  height: 26px;
+  margin: 0 0 10px;
+  padding: 0 10px 11px;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255,255,255,.35);
+  width: 125px;
+  
+  transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
+}
+
+/* Hover sur les contacts */
+a.s3d:hover {
+  opacity: 1;
+  width: 160px;
+  margin-left: -10px;
+}
+
+/* transform au click */
+a.s3d:active { transform: translateX(200px); }
+
+/* Facebook */
+a.facebook {
+    background: #4669ab;
+    background: linear-gradient(#4669ab, #304886);
+    border-top: 1px solid #8ea4cd;
+    color: rgba(21,31,53,1);
+    text-shadow: 0 1px 1px rgba(255,255,255,.35);
+  }
+
+/* Twitter */
+a.twitter {
+  background: #65acc8;
+  background: linear-gradient(#65acc8, #4586ae);
+  border-top: 1px solid #a1cdde;
+  color: rgba(25,45,55,.9);
+}
+
+/* Instagram */
+a.instagram {
+    background: #4fdd20;
+    background: linear-gradient(#7f2299, #dc5e16);
+    border-top: 1px solid #8ea4cd;
+    color: rgba(21,31,53,1);
+    text-shadow: 0 1px 1px rgba(255,255,255,.35);
+  }
+
+/* Icons position */
+.icons {
+  bottom: 2px;
+  display: block;
+  height: 26px;
+  position: absolute;
+  right: 16.5px;
+  width: 10px;
+  font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
