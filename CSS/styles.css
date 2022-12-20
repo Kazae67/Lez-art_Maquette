@@ -153,8 +153,9 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 /* DÉBUT Filter */
 .section-filter{
   padding:20px;
-  width: 1280px;
   margin:40px auto;
+  position: fix;
+
 }
 
 /* Filtre de gauche à droite */
