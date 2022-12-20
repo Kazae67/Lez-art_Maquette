@@ -44,11 +44,21 @@ html {
 .section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
   /*-webkit-overflow-scrolling: touch;*/
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }	
+
+.section-3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
  
 /* NAVBAR */
 nav{
@@ -103,7 +113,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 /* G A L E R I E */
 #containerGalerie {
   display: flex;
-  min-height: 100vh; /*v = viewport, h = height */
+  min-height: auto; /*v = viewport, h = height */
   align-items: center;
   justify-content: center;
 }
@@ -149,7 +159,7 @@ nav ul li a:hover,.demo-nav ul li a:focus-within {
 
 /* Filtre de gauche à droite */
 .section-filter ul{
-  /* display:flex; */
+  display:flex;
   margin-bottom:10px;
   
 }
