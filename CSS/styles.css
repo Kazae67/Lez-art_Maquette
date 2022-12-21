@@ -13,16 +13,6 @@ background-color: rgb(174, 174, 112);
 font-family: "Poppins", sans-serif;
 }
 
-/* LOGO */
-#logo {
-  font-size:20px;
-  margin-right:1250px;
-  margin-top:30px;
-  color: white;
-  letter-spacing:2px;
-  text-shadow:2px 2px 5px;
-}
-
 /* Taille par section */
 html, body, .section {
   height: 100%;
@@ -59,56 +49,7 @@ html {
   justify-content: center;
 }
 
- 
-/* NAVBAR */
-nav{
-  position:fixed;
-  top: 0;
-  padding-top:10px;
-  height:100px;
-  z-index: 10;
-  left:0;
-  right:0;
-  background:rgb(0, 0, 0);
-}
 
-/* Position des UL */
-nav ul {
-  margin: -20px;
-  padding: 0px;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;	
-}
-
-/* Nav espacement */
-nav li {
-  padding: 0.2rem;
-}
-
-/* Nav design */
-nav a {
-  display: relative;
-  font-size:0.8rem;
-  text-decoration: none;
-  justify-content: center;
-  max-width: 12rem;
-  color: white;
-  margin: 2rem auto;
-  padding: 1.0rem;
-  border-radius: 4px;
-  box-shadow: 0 1px 15px rgb(0, 0, 0);
-  background-image: linear-gradient(#e71111bd,#ffffff);
-  position: relative;
-  z-index: 0;
-}
-
-/* Hover curseur */
-nav ul li a:hover,.demo-nav ul li a:focus-within {	
-  transition:0.5s;
-  color: black;
-  
-  }
   
 /* G A L E R I E */
 #containerGalerie {

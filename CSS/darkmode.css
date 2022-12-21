@@ -1,10 +1,10 @@
 /* Boutton position form & couleur */
   .btn-toggle{
-    position:absolute;
-    top: 25px;
-    right:25px;
-    width: 60px;
-    height: 60px;
+
+    top: 0px;
+    right:0px;
+    width: 0px;
+    height: 23px;
     border-radius:8%;
     background:rgb(114, 114, 114);
     color:#fff;
@@ -19,15 +19,14 @@
   /* Curseur hover dark mode */
     .btn-toggle {
       --s: 60px;   /* the size of the image */
-      --b: 3px;     /* the border thickness*/
-      --g: 14px;    /* the gap */
+      --b: 2px;     /* the border thickness*/
+      --g: 0px;    /* the gap */
       --c: #ffffff; /* the color */
     width: var(--s);
-    aspect-ratio: 1;
     outline: calc(var(--s)/7) solid rgba(0, 0, 0, 0);
-    outline-offset: calc(var(--s)/-10);
+    outline-offset: calc(var(--s)/-1);
     cursor: pointer;
-    transition: 0.7s;
+    transition: 0.5s;
   }
   
   /* hover btn darkmode */
