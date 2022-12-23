@@ -77,3 +77,10 @@ a.instagram {
   align-items:center;
 
 }
+
+/* Panier icon */
+.basket-color{
+  color:white;
+  align-items:center;
+  justify-content: center; 
+}
