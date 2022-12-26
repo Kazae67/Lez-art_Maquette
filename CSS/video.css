@@ -15,17 +15,18 @@
     z-index:-1;
   }
 
-  .text-video{
-    font-size:xx-large;
+  .text-video {
+    font-size: xx-large;
     text-shadow: 0 0 10px;
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    color:white;
-    z-index:100;
-    align-items:center;
-    margin-top:200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    z-index: 100;
+    align-items: center;
+    margin-top: 200px;
     justify-content: center;
     position: absolute;
     top: 0;
+
   }
